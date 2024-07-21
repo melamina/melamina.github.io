@@ -1,246 +1,255 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
-h1{ font-size: 3.2em;}
-h2{ font-size: 2.7em;}
-h3{ font-size: 1.7em;}
-p{ font-size: 1em;}
-ul{ list-style: none;}
-li{ font-size: 1.5em;}
+h1 {
+    font-size: 3.2em;
+}
 
-button{
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 1.7em;
+}
+
+p {
+    font-size: 1em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.5em;
+}
+
+button {
     font-size: 1em;
     font-weight: bold;
     padding: 10px 30px;
     border-radius: 5px;
-    border: 2px solid rgba(0,0,0,0.3);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     color: white;
     background-color: rgb(86, 83, 230);
 }
 
-button:hover{
+button:hover {
     background-color: rgb(86, 83, 230);
 }
 
-.container{
+.container {
     max-width: 1400px;
     margin: auto;
 }
 
-.color-acento{ color:rgb(86, 83, 230); }
-
-header{
-    background-color: rgb(245,245,245);
-    
+.color-acento {
+    color: rgb(86, 83, 230);
 }
 
-header .logo{
+header {
+    background-color: rgb(245, 245, 245);
+    z-index: 10;
+}
+
+header .logo {
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
-    color:rgb(86, 83, 230);
+    color: rgb(86, 83, 230);
     font-size: 1.6em;
 }
 
-header .container{
+header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-header nav{
+header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 25px;
 }
 
-header a{
+header a {
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
 
-header a:hover{
+header a:hover {
     color: rgb(86, 83, 230);
 }
 
-#hero{
+#hero {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
     color: white;
-    background-image: 
-    linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("Imagenes/fondo\ 1.jpg");
+    background-image:
+        linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("Imagenes/fondo\ 1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-#hero h1{
+#hero h1 {
     color: white;
     text-decoration: none;
 }
 
-#hero button{
+#hero button {
     font-size: 1.75em;
 }
 
-#Presentacion .container{
+#Presentacion .container {
     text-align: center;
     padding: 200px 12px;
 }
 
-#Mis-trabajos{
+#Mis-trabajos {
     background-color: rgb(68, 43, 43);
     color: white;
     text-align: center;
 }
 
-#Mis-trabajos .container{
+#Mis-trabajos .container {
     padding: 150px 12px;
 }
 
-#Mis-trabajos h2{
+#Mis-trabajos h2 {
     margin-top: 0;
     font-size: 3.2em;
 }
 
-#Mis-trabajos p{
+#Mis-trabajos p {
     display: none;
 }
 
-#Mis-trabajos .carta{
+#Mis-trabajos .carta {
     background-position: center center;
     background-size: cover;
-    padding: 50px 0px;
-    margin: 30px;
+    padding: 40px 25px;
+    margin: 35px;
     border-radius: 15px;
 }
 
-.carta:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("Imagenes/socialmedia.jfif");
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("Imagenes/socialmedia.jfif");
 
 }
 
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("Imagenes/editorial.jfif");
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("Imagenes/editorial.jfif");
 }
 
-.carta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("Imagenes/ilustra.jfif");
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("Imagenes/ilustra.jfif");
 
 }
 
-#contacto .container{
+#contacto .container {
     text-align: center;
     padding: 120px 12px;
 }
 
-#contacto li{
+#contacto li {
     margin: 16px 0px;
     font-weight: bold;
 }
 
-#final{
+
+
+#final {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(30,30,30);
+    background-color: rgb(30, 30, 30);
     color: white;
     height: 80vh;
 }
 
-#final h2{
+#final h2 {
     font-size: 9vw;
 }
 
-#final button{
+#final button {
     font-size: 5vw;
 }
 
-footer{
-    background-color: rgb(230,230,230);
+footer {
+    background-color: rgb(230, 230, 230);
 }
 
-footer p{
+footer p {
     margin: 0;
     padding: 12px;
-    color: rgb(100,100,100);
+    color: rgb(100, 100, 100);
 }
 
-footer .container{
+footer .container {
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
-@media (min-width: 700px){
-    header{
+@media (min-width: 700px) {
+    header {
         position: fixed;
         width: 100%;
     }
 
-    header .container{
+    header .container {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    header nav{
+    header nav {
         flex-direction: row;
         padding-bottom: 0;
         padding-right: 20px;
     }
 
-    #hero h1{
+    #hero h1 {
         font-size: 5.2em;
     }
 
-    #Presentacion .container{
+    #Presentacion .container {
         display: flex;
         justify-content: space-evenly;
     }
 
-    #Presentacion .texto{
+    #Presentacion .texto {
         width: 50%;
         max-width: 600px;
         text-align: initial;
@@ -250,111 +259,176 @@ footer .container{
         justify-content: center;
     }
 
-    #Presentacion h2{
+    #Presentacion h2 {
         margin-top: 0px;
     }
 
-    #Presentacion .img-container{
+    #Presentacion .img-container {
         background-image: url("Imagenes/foto\ de\ perfil.jpg");
         background-size: cover;
         background-position: center center;
         height: 500px;
-        width: 400px; 
+        width: 400px;
     }
 
-    #Mis-trabajos .cuadros{
+
+    .carta {
+        cursor: pointer;
+        transition: transform 300ms ease-in-out;
+        outline: none;
+    }
+
+    .carta:hover {
+        transform: scale(1.05);
+
+    }
+
+    .carta:focus {
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+        transform: scale(1.1);
+    }
+
+
+    #Mis-trabajos .cuadros {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
-    #Mis-trabajos p{
+    #Mis-trabajos p {
         display: block;
         margin-bottom: 35px;
     }
 
-    #Mis-trabajos h2{
+    #Mis-trabajos h2 {
         font-size: 4.2em;
     }
 
-    #Mis-trabajos h3{
-        margin-top:0;
+    #Mis-trabajos h3 {
+        margin-top: 0;
     }
 
-    #Mis-trabajos .carta{
+    #Mis-trabajos .carta {
         flex-wrap: nowrap;
-        padding: 70px;
-        background-size: 100% 170px;
+        max-width: 300px;
+        min-width: 300px;
         background-repeat: no-repeat;
         background-position-y: 0;
-        background-color: rgba(50, 50, 50, 1);
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        background-color: rgb(53, 54, 59);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     }
 
-    .carta:first-child{
+    .carta:first-child {
         min-width: 200;
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("Imagenes/socialmedia.jfif");
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("Imagenes/socialmedia.jfif");
 
     }
 
-    .carta:nth-child(2){
+    .carta:nth-child(2) {
         min-width: 200;
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("Imagenes/editorial.jfif");
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("Imagenes/editorial.jfif");
     }
 
-    .carta:nth-child(3){
+    .carta:nth-child(3) {
         min-width: 200;
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("Imagenes/ilustra.jfif");
-
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("Imagenes/ilustra.jfif");
     }
 
-    #contacto{
-        background-image: url("Imagenes/contacto.jpg");
-        background-repeat: no-repeat;
-        background-size: 500px 400px;
-        background-position: calc(100vw - 500px) 120px;
+
+
+    .container-contacto {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    #contacto .container{
-        text-align: initial;
+    .info {
+        width: 30%;
+        height: 100%;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        justify-content: center;
+        padding: 0 50px;
     }
 
-    #contacto ul{
-        margin-left: 100px;
+    .form {
+        width: 70%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0px 170px;
     }
 
-    #final h2{
+    .datos {
+        width: 100%;
+        display: flex;
+        gap: 30px;
+    }
+
+    .credencial {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .input input {
+        width: 100%;
+        height: 35px;
+    }
+
+    .credencial input {
+        width: 100%;
+        height: 40px;
+    }
+
+    .boton-form {
+        width: 100%;
+    }
+
+    .boton-form button {
+        width: 100%;
+    }
+
+    form textarea {
+        resize: none;
+        width: 100%;
+        height: 75px;
+    }
+
+
+    #final h2 {
         font-size: 5em;
     }
 
-    #final button{
+    #final button {
         font-size: 2em;
     }
 
-    footer .container{
+    footer .container {
         justify-content: flex-end;
     }
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     #contacto{
         background-position-x: calc(100vw - 800px);
     }
-}
-
-
-
+} */
